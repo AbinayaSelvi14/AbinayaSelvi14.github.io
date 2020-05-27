@@ -1,0 +1,104 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: verdana;
+}
+
+#main{
+	width: 100%;
+	height: 100vh;
+}
+
+nav{
+	width: 100%;
+	height: 80px;
+	background-color: #242323;
+	line-height: 80px;
+}
+
+nav ul{
+	float: right;
+	margin-right: 10px;
+}
+
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	transition: 0.8s all;
+}
+
+nav ul li:hover{
+	background-color: #f59607;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #fa3434;
+	padding: 20px;
+	font-family: akaPosse;
+}
+
+.cont{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.button{
+	position: relative;
+	text-align: center;
+	width: 150px;
+	padding: 5px;
+	font-size: 30px;
+	color: black;
+	font-family: poppins;
+	font-weight: 400;
+	border: 3px solid red;
+	text-transform: uppercase;
+	cursor: pointer;
+	border-radius: 100px;
+	transition: 1.5s;
+	align-self: center;
+
+}
+
+.button:hover{
+	box-shadow: 0 5px 50px 0 red inset, 0 5px 50px 0 red,
+	            0 5px 50px 0 red inset, 0 5px 50px 0 red;
+	text-shadow: 0 0 5px red, 0 0 5px red;
+}
+
+@media screen and (max-width: 991px){
+	nav ul li a{
+		padding: 20px;
+	}
+	nav{
+	width: 100%;
+	height: 250px;
+	background-color: #242323;
+	line-height: 50px;
+}
+@media screen and (max-width: 768px){
+	nav ul li a{
+		padding: 20px;
+	}
+	nav{
+	width: 100%;
+	height: 200px;
+	background-color: #242323;
+	line-height: 50px;
+}
+@media screen and (max-width: 425px){
+	nav ul li a{
+		padding: 50px;
+	}
+	nav{
+	width: 100%;
+	height: 350px;
+	background-color: #242323;
+	line-height: 50px;
+}
+
+
+
